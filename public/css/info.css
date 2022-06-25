@@ -1,0 +1,363 @@
+/* GENERALE */
+
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    font-size: 14px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color:white
+}
+
+a.button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+a.button:hover{
+    background-color: white;
+    color: black;
+}
+
+h1,p{
+    font-style: normal;
+}
+
+section h1,p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#links{
+    font-style: normal;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+/* HEADER */
+header{
+    /*background-color: rgb(43, 43, 43);*/
+    width: 100%;
+    height: 85px;
+
+
+    position:relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    border-bottom: 1px solid grey;
+}
+
+
+
+header h1{
+    font-size: 40px;
+    position: relative;
+    top: 55px;
+    left: 10px;
+    color:white;
+}
+
+#general_info{
+    width: 80%;
+}
+
+#general_info p{
+    color:white;
+    position: relative;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 100;
+}
+.title-info{
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+#general_info .personal-info{
+    color:#2400a5;
+    font-weight: bold;
+    margin-right: 13px;
+}
+
+#info-cont{
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+}
+
+header h1 em{
+    font-size: .7em;
+}
+
+header h1 a{
+    font-size: .5em;
+    margin-left:35%;
+}
+
+/* PARTE HEADER MOBILE */
+
+@media (max-width: 700px){
+    header{
+        height: 55px;
+    }
+
+    header h1{
+        font-size: 25px;
+    }
+    
+    a.button{
+        padding: 5px 10px;
+    }
+}
+
+/* NAV HEADER */
+header nav{
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+
+    font-size: 22px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-info{
+    font-size: 34px;
+    font-weight: 100;
+}
+
+#links a{
+    margin: 15px;
+}
+
+#logo{
+    font-size: 40px;
+    color:white;
+}
+
+#menu {
+    display: none;
+  }
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+a.user-button{
+    display: inline-block;
+    min-width: 70px;
+    color:white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin: 0px;
+} 
+
+/* PARTE NAV MOBILE */
+
+@media (max-width: 700px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+
+    #logo{
+        font-size: 30px;
+    }
+
+    #general_info p{
+        font-size: 18px;
+    }
+
+    #contatore_commenti{
+        font-size: 22px;
+    }
+
+    .title-info{
+        text-align: center;
+    }
+  }
+  
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    color:white;
+}
+
+section p{
+    font-size: 25px;
+    padding:15px;
+}
+.scroll-box{
+    height: 65%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: rgba(255,255,255,0.2);
+    margin-top: 5px;
+    margin-bottom: 65px;
+}
+
+.scroll-box p{
+    padding: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+#info_scroll{
+    margin:15px;
+}
+
+#date{
+    color: #140352;
+    font-weight: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+#count{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+#contatore_commenti{
+    font-size: 34px;
+}
+
+#n_comment{
+    font-size: 34px;
+    position: relative;
+    left: -10px;
+    color: #2400a5;
+    font-weight: bold;
+    padding-left: 2px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+section ::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+    overflow: auto;
+    position:fixed;
+    right: 20px;
+    display: none;
+}
+
+section ::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 80%;
+    background-color: grey;
+}
+
+section ::-webkit-scrollbar-thumb {
+    background: black;  
+    border-radius: 10px;
+}
+     
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(43, 43, 43);
+    text-align:center;
+    padding: 35px;
+    font-size: 25px;
+    color:white;
+}
+
+/* PARTE FOOTER MOBILE */
+
+/* Menu */
+#menu{
+    cursor: pointer;
+}
+
+/* menu */
+.modal{
+    height: 40%;
+    width: 20%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    top: 13.8%;
+    left: 80%;
+    flex-direction: column;
+}
+
+#view{
+    background-color: rgb(43, 43, 43);
+    border: 1px solid grey;
+    color: black;
+    height: 160px;
+    width: 20%;
+    top:55px;
+}
+
+@media(max-width: 700px){
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 750px){
+    iframe{
+        width: 85%;
+        height: 20%;
+    }
+}
+
+#view a{
+    font-weight: 600;
+}
+
+@media(max-width: 5000px){
+    #view{
+        opacity: 0;
+    }
+}
+
+@media(max-width:700px){
+    #view{
+        opacity: 1;
+    }
+}
+
+.hidden{
+    display: none;
+}
